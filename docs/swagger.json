@@ -1,0 +1,56 @@
+{
+    "schemes": [
+        "http"
+    ],
+    "swagger": "2.0",
+    "info": {
+        "description": "URL Shortening Service : This is a URL shortening server.",
+        "title": "Espad URL Shortening API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "localhost",
+    "basePath": "/api/v1",
+    "paths": {
+        "/health_check": {
+            "get": {
+                "description": "health check server auth",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "auth"
+                ],
+                "summary": "healthCheck",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": true
+                        }
+                    }
+                }
+            }
+        },
+        "/short/get": {
+            "get": {
+                "description": "Get the Shortening URL",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "shortening"
+                ],
+                "summary": "makeGetShorteningHandler",
+                "responses": {}
+            }
+        }
+    }
+}

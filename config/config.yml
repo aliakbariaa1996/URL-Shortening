@@ -1,0 +1,8 @@
+port: 5050
+
+#db config
+db:
+  redis_host: localhost
+  redis_port: 6379
+  redis_pass:
+  redis_db: 0

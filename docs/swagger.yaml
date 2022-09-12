@@ -1,0 +1,38 @@
+basePath: /api/v1
+host: localhost
+info:
+  contact: {}
+  description: 'URL Shortening Service : This is a URL shortening server.'
+  title: Espad URL Shortening API
+  version: "1.0"
+paths:
+  /health_check:
+    get:
+      consumes:
+      - application/json
+      description: health check server auth
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: healthCheck
+      tags:
+      - auth
+  /short/get:
+    get:
+      consumes:
+      - application/json
+      description: Get the Shortening URL
+      produces:
+      - application/json
+      responses: {}
+      summary: makeGetShorteningHandler
+      tags:
+      - shortening
+schemes:
+- http
+swagger: "2.0"

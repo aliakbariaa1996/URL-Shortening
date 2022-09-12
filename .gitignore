@@ -1,0 +1,6 @@
+deployments/data
+*.out
+/.idea
+./docs/
+.vscode/
+deployments/
